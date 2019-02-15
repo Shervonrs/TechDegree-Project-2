@@ -1,0 +1,180 @@
+/* Globally */
+* {
+  box-sizing: border-box;
+}
+* a {color:black}
+
+/*  Base Element Styles*/
+
+
+body {
+  font-family: Raleway, monospace;
+  line-height: 1.6;
+  margin: 0 auto;
+
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 2em;
+  text-align: center;
+  color: #576366;
+}
+
+.main-nav a,
+h2,
+ {
+   font-size: 7em;
+}
+
+
+h2,
+h3 {
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+
+/* Navigation */
+
+
+
+.name {
+  font-size: 1.4em;
+  margin:0;
+  font-weight: bolder;
+  padding:1em;
+}
+
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+}
+
+.main-nav a {
+  font-size: 0.95em;
+  text-transform: uppercase;
+  background: white;
+  margin-top: 6px;
+  margin: 6px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.main-nav a:hover {
+  color: #ebebeb;
+}
+
+.photo {
+  width: 70%;
+  margin-left: 15%;
+  padding-top:2.5em;
+}
+
+
+/* Layout Containers */
+
+.box {
+  width: 100%;
+  background: #FAFAFA;
+}
+
+.main-header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  background: white;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 1.8em;
+  margin-top: 1.5em;
+}
+
+.main-footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 90%;
+  margin: 0 auto;
+
+}
+.contact {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.bottom {
+  text-align: center;
+  border-top: 1.5px solid lightgrey;
+  margin-bottom: 1.5em;
+}
+
+/* Page Elements*/
+
+.title,
+.main-nav {
+  font-weight: bolder ;
+  font-size: .85em;
+}
+
+.bottom-list {
+  padding-top: 1.5em;
+}
+
+.bottom-name {
+  float: left;
+  font-weight: bolder;
+}
+
+.bottom-nav {
+  float: right;
+  font-weight: bolder;
+}
+
+.info {
+  padding-bottom: 1em;
+}
+.num {
+  letter-spacing: 234px;
+}
+
+span {
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+/*  Columns Layout*/
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Float clearfix */
