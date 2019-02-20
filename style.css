@@ -66,8 +66,11 @@ img {
   color: #ebebeb;
 }
 
+
+.banner {
+  padding-top: 3em;
+}
 .banner img {
-  margin-top: 3em;
   display: block;
   margin-left: auto;
   margin-right: auto;
