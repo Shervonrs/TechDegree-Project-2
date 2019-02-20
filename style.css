@@ -2,13 +2,11 @@
 * {
   box-sizing: border-box;
 }
-* a {color:black}
 
 /*  Base Element Styles*/
 
-
 body {
-  font-family: Raleway, monospace;
+  font-family: Raleway, serif;
   line-height: 1.6;
   margin: 0 auto;
 
@@ -21,16 +19,12 @@ p {
   color: #576366;
 }
 
-.main-nav a,
-h2,
- {
-   font-size: 7em;
-}
-
 
 h2,
 h3 {
   text-align: center;
+  font-size: 0.95em;
+
 }
 img {
   width: 100%;
@@ -45,13 +39,11 @@ img {
 
 /* Navigation */
 
-
-
 .name {
   font-size: 1.4em;
-  margin:0;
-  font-weight: bolder;
-  padding:1em;
+  margin: 0;
+  font-weight: 900;
+  padding: 1em;
 }
 
 .name a,
@@ -74,12 +66,16 @@ img {
   color: #ebebeb;
 }
 
-.photo {
-  width: 70%;
-  margin-left: 15%;
-  padding-top:2.5em;
+.banner img {
+  margin-top: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
+  /* margin-left: 15%;
 
+}
 
 /* Layout Containers */
 
@@ -88,7 +84,8 @@ img {
   background: #FAFAFA;
 }
 
-.main-header {
+.main-header,
+.banner {
   width: 90%;
   margin: 0 auto;
 }
@@ -128,8 +125,7 @@ img {
 
 .title,
 .main-nav {
-  font-weight: bolder ;
-  font-size: .85em;
+  font-weight: 900 ;
 }
 
 .bottom-list {
@@ -141,6 +137,10 @@ img {
   font-weight: bolder;
 }
 
+.footer-nav,
+.nam {
+  display:none;
+}
 .bottom-nav {
   float: right;
   font-weight: bolder;
@@ -154,7 +154,7 @@ img {
 }
 
 span {
-  font-weight: bolder;
+  font-weight: 900;
   margin-left: 10px;
 }
 
@@ -162,19 +162,182 @@ span {
 
 
 
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
 /* =================================
   Media Queries
 ==================================== */
 
+@media(min-width: 768px){
+
+  /* Navigation */
+
+
+.name {
+  margin-bottom: -.5em;
+  padding-top: ;
+}
+
+.main-nav li {
+  float: left;
+  padding: 0% 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.main-nav {
+  display: table;
+  margin: 0 auto;
+}
+
+.main-nav a {
+background: #FAFAFA;
+}
+
+    /* Banner Content */
+
+.banner {
+  margin: 0  auto;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+.banner p {
+  float: left;
+  text-align: left;
+  width: 60%;
+  font-size: 1.2em;
+  padding-right: 1em;
+  margin-top:0;
+
+}
+
+.banner img {
+  float: right;
+  width:40%;
+  margin-top: 0;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Columns */
+
+
+.col {
+  width: 49%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.first,
+.third,
+.fifth {
+  float: left;
+  margin-right: 2%;
+}
+
+.col p {
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/*  Footer */
+
+.main-footer p {
+  text-align: center;
+  padding: 0 5em;
+  font-size: 1.156em;
+}
+
+.bottom-name,
+.bottom-nav  {
+  display: none;
+  font-size: 0.95em;
+}
+
+.footer-nav,
+.nam {
+  display:inline;
+}
+ .nam {
+  float:left;
+  margin-top:-15px;
+}
+.footer-nav li{
+  float: right;
+  margin-top:-15px;
+  padding-left: 2.5em;
+}
+
+}
+
+
+@media(min-width: 1024px) {
+
+.container {
+  max-width: 1024px;
+}
 
 
 
+    /* Header  */
 
 
+ .name,
+ .main-nav a,
+ .main-nav li{
+   margin: 0;
+   padding: 0;
+   margin-top: 1em;
+}
+.main-nav a {
+  padding-left: 2.5em;
+}
+.name {
+    float: left;
+}
+.main-nav {
+  float: right;
+}
 
+  /*  Banner */
 
+.banner {
+  font-size: 1.1em;
+}
+    /* Columns */
 
+.col {
+    width: 33.33%;
+    margin: 0 auto;
+    padding: 5px;
+    float: left;
+  }
 
+.col p {
+    padding: 9px;
+  }
 
+  .col h3{
+    font-weight: bolder;
+    font-size: 1.1em;
+  }
 
-/* Float clearfix */
+    /* Footer  */
+
+.main-footer p {
+  padding-right: 11em;
+  padding-left: 11em;
+}
+  .box {
+    clear: both;
+  }
+}

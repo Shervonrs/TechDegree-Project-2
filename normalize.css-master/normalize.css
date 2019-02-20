@@ -80,6 +80,8 @@ a {
 a {
   text-decoration: none;
 }
+
+* a {color:black}
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
