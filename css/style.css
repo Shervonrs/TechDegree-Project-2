@@ -112,6 +112,19 @@ img {
   margin-top: 1.5em;
 }
 
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper p {
+  color:#5D6D7E;
+}
+
+.wrapper img {
+  box-shadow: 05px 05px grey;
+}
+
 .main-footer {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -129,6 +142,7 @@ img {
   border-top: 1.5px solid lightgrey;
   margin-bottom: 1.5em;
 }
+
 
 /* Page Elements*/
 
@@ -264,6 +278,10 @@ background: #FAFAFA;
   padding-right: 2em;
 }
 
+.wrapper p{
+  padding-left: 2em ;
+  padding-right: 2em;
+}
 /*  Footer */
 
 .main-footer p {
@@ -308,11 +326,7 @@ background: #FAFAFA;
   max-width: 1024px;
 }
 
-
-
     /* Header  */
-
-
  .name,
  .main-nav a,
  .main-nav li{
@@ -348,8 +362,12 @@ background: #FAFAFA;
     padding: 9px;
   }
 
-  .col h3{
-    font-weight: bolder;
+.col h3{
+  font-weight: bolder;
+  font-size: 1.1em;
+  }
+
+.wrapper p{
     font-size: 1.1em;
   }
 
